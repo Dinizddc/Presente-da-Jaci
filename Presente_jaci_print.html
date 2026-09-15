@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizador de Imagem - Fundo Escuro</title>
+
+    <!-- ADICIONE ESTA LINHA ABAIXO (Mude "meu-icone.png" para o nome da sua foto) -->
+    <link rel="icon" type="image/png" href="Captura de tela 2026-09-14 233836.png">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #121212;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+
+        .print-image {
+            height: 100vh;
+            width: auto;
+            object-fit: contain;
+            image-rendering: -webkit-optimize-contrast;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="Captura de tela 2026-09-14 231750.png" alt="Print" class="print-image">
+    </div>
+
+</body>
+</html>
